@@ -15,8 +15,8 @@ def get_status(request):
         "current_day":current_day_name,
         "utc_time":formatted_datetime,
         "track":request.query_params.get("track"),
-        "github_fle_url":"",
-        "github_repo_url":"http://github.com",
+        "github_file_url":"https://github.com/Couzy21/HNG/blob/couzy/api/views.py",
+        "github_repo_url":"https://github.com/Couzy21/HNG",
         "status_code":status.HTTP_200_OK,
           }
     return Response(response_data)
